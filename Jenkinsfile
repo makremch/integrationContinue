@@ -40,6 +40,12 @@ pipeline {
                 sh label: '', script: 'mvn test'
             }
         }
+        stage('deploiment') {
+            steps {
+                sh label: '', script: 'mvn deploy'
+            }
+        }
+        
         stage('Deploy') {
             steps {
                echo 'Deploying....'
