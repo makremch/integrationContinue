@@ -23,7 +23,8 @@ pipeline {
         
         stage('build') {
             steps {
-                sh label: '', script: 'mvn install '
+                script {
+                sh  "mvn install"}
             }
         }
         
