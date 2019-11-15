@@ -23,7 +23,7 @@ pipeline {
         stage('Deploy') {
             steps {
                echo 'Deploying....'
-                
+                sh label: '', script: 'mvn deploy'
             }
         }
     }
