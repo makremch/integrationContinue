@@ -25,4 +25,5 @@
   <url>http://localhost:8081/nexus/content/repositories/nexus-snapshot09/</url>
   </snapshotRepository>
   </distributionManagement>
+  <!--distributionManagement-->
 </project>
