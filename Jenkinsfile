@@ -32,7 +32,7 @@ pipeline {
         
         stage('checkout') {
             steps {
-                git 'https://github.com/makremch/integrationTest'
+                git 'https://github.com/makremch/integrationContinue'
             }
         }
         stage('Test') {
