@@ -22,7 +22,8 @@ pipeline {
                 sh label: '', script: 'mvn deploy'
             }
         }  
-        
+                            // e "bat" step
+
                   stage('Email notification') {
             steps {
         mail bcc: '', body: 'Jenkins', cc: '', from: '', replyTo: '', subject: 'Test succes', to: 'mzehsabrine3@gmail.com'
